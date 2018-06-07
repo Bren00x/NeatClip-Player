@@ -8,7 +8,7 @@ var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = "https://cdn.jsdelivr.net/gh/bren00x/NeatClip-Player@1.0.0/nc-player.css";
+    link.href = "https://cdn.jsdelivr.net/gh/bren00x/NeatClip-Player@1.0.1/nc-player.css";
     head.appendChild(link);
     link.onload = function() { /*start()*/ }
     
