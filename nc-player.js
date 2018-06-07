@@ -1,7 +1,7 @@
 /*
 * JS
 * @bren00x
-* NeatClip Player v1.0.1
+* NeatClip Player v1.0.2
 * Built on Plyr.io v2.0.7
 */
 var head  = document.getElementsByTagName('head')[0];
@@ -18,7 +18,7 @@ if (/embed/.test(self.location.href)){
     embed_link = self.location.href;
 	code = embed_link.substring(embed_link.lastIndexOf('/') + 1);
 	clip_link = "https://neatclip.com/clip/"+code;
-	
+	document.querySelector(".NCPlayer").className += " embed"
 	html = `<a target='_blank' href='`+clip_link+`' style='color:#fff;text-decoration:none;border-bottom:0;'><span class='ncl'><img src='https://neatclip.com/img/logo_128x128.png' height='16px' style='height: 24px;position: relative;top: 2px;vertical-align: sub;'>NeatClip</span></a>`;
 console.log(code,embed_link,clip_link,html);
     }
