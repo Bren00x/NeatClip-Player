@@ -1,7 +1,7 @@
 /*
 * JS
 * @bren00x
-* NeatClip Player v1.0.0
+* NeatClip Player v1.0.1
 * Built on Plyr.io v2.0.7
 */
 var head  = document.getElementsByTagName('head')[0];
@@ -10,7 +10,7 @@ var head  = document.getElementsByTagName('head')[0];
     link.type = 'text/css';
     link.href = "https://cdn.jsdelivr.net/gh/bren00x/NeatClip-Player@1.0.0/nc-player.css";
     head.appendChild(link);
-    link.onload = function() { start() } }
+    link.onload = function() { /*start()*/ }
     
 
 var code,embed_link,clip_link,html="";
