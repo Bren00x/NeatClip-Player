@@ -1,7 +1,7 @@
 /*
 * CSS
 * @bren00x
-* NeatClip Player v1.0.3
+* NeatClip Player v1.0.4
 * Built on Plyr.io v2.0.7
 */
 .NCPlayer {
@@ -73,6 +73,8 @@ padding:20px;
     padding-left: 3px;
 }
 
+
+
 @media only screen and (max-width: 500px){
   
   .ncl,.plyr__time--duration{
@@ -82,7 +84,9 @@ padding:20px;
 }
 
 @media only screen and (max-width: 350px){
-  
+  button.volume,span.plyr__volume{
+  display:none;
+}
   .plyr__time{
     font-size:0px;
   }
