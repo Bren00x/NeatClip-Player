@@ -1,10 +1,17 @@
 /*
      * JS
      * @bren00x
-     * NeatClip Player v1.0.4
+     * NeatClip Player v1.0.5
      * Built on Plyr.io v2.0.7
      */
     var head = document.getElementsByTagName('head')[0];
+
+
+    var plyr_style = document.createElement('link');
+    plyr_style.rel = 'stylesheet';
+    plyr_style.type = 'text/css';
+    plyr_style.href = "https://cdn.plyr.io/2.0.7/plyr.css";
+    head.appendChild(plyr_style);
 
     var custom_style = document.createElement('link');
     custom_style.rel = 'stylesheet';
@@ -12,11 +19,7 @@
     custom_style.href = "https://cdn.jsdelivr.net/gh/bren00x/NeatClip-Player@1.0.4/nc-player.css";
     head.appendChild(custom_style);
 
-    var plyr_style = document.createElement('link');
-    plyr_style.rel = 'stylesheet';
-    plyr_style.type = 'text/css';
-    plyr_style.href = "https://cdn.plyr.io/2.0.7/plyr.css";
-    head.appendChild(plyr_style);
+    
 
     var plyr_script = document.createElement('script');
     plyr_script.setAttribute('src', "https://cdn.plyr.io/2.0.7/plyr.js");
