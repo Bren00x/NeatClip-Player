@@ -1,16 +1,32 @@
 /*
 * CSS
 * @bren00x
-* NeatClip Player v1.0.0
+* NeatClip Player v1.0.2
 * Built on Plyr.io v2.0.7
 */
-
-
 .NCPlayer {
   max-width: 800px;
   margin: 0 auto;
 }
+.NCPlayer.embed .plyr,.NCPlayer.embed .plyr video{
+  
+  width:100%;
+  height:100%;
+}
 
+.NCPlayer.embed{
+  background-color:#000000;
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  height:100%;
+}
+
+.NCPlayer.embed .plyr__video-wrapper{
+  height:100%;
+}
 
 .plyr--video .plyr__controls button.tab-focus:focus, .plyr--video .plyr__controls button:hover {
     background: #007bff;
