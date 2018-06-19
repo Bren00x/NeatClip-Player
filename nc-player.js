@@ -1,7 +1,7 @@
 /*
      * JS
      * @bren00x
-     * NeatClip Player v1.0.5
+     * NeatClip Player v1.0.6
      * Built on Plyr.io v2.0.7
      */
     var head = document.getElementsByTagName('head')[0];
@@ -32,7 +32,7 @@
 
 
     var code, embed_link, clip_link, html = "";
-    if (/embed/.test(self.location.href)) {
+    if (window.location.href.indexOf("/embed") > -1) {
         embed_link = self.location.href;
         code = embed_link.substring(embed_link.lastIndexOf('/') + 1);
         clip_link = "https://neatclip.com/clip/" + code;
